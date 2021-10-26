@@ -42,5 +42,7 @@
     "require-dir": "^1.2.0",
     "vinyl-ftp": "^0.6.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
 }
