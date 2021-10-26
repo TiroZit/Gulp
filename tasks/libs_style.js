@@ -1,4 +1,7 @@
-const plugins = [];
+const plugins = [
+	//'node_modules/@fancyapps/ui/dist/fancybox.css',
+	//'node_modules/swiper/swiper-bundle.min.css',
+];
 
 const {
 	src,

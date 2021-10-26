@@ -1,0 +1,8 @@
+# !node_modules/
+
+node_modules/*
+# !node_modules/swiper/
+# !node_modules/@fancyapps/
+
+# node_modules/@fancyapps/*
+# !node_modules/@fancyapps/ui/

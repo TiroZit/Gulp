@@ -15,6 +15,7 @@ module.exports = function style() {
 		.pipe(map.init())
 		.pipe(bulk())
 		.pipe(sass({
+			outputStyle: 'compressed'
 		}).on('error', sass.logError))
 		.pipe(prefixer({
 			overrideBrowserslist: ['last 8 versions'],
@@ -28,8 +29,6 @@ module.exports = function style() {
 				'Safari >= 6',
 			],
 		}))
-		.pipe(concat('style.css'))
-		.pipe(dest('build/css/'))
 		.pipe(clean({
 			level: 2
 		}))
