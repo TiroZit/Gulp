@@ -20,6 +20,6 @@ module.exports = function html() {
   			useShortDoctype: true,
   			collapseWhitespace: true
 		}))
-		.pipe(dest('build'))
+		.pipe(dest('docs'))
 		.pipe(bs.stream())
 }
