@@ -7,6 +7,7 @@ const bulk = require('gulp-sass-bulk-importer');
 const prefixer = require('gulp-autoprefixer');
 const clean = require('gulp-clean-css');
 const concat = require('gulp-concat');
+const groupMedia = require('gulp-group-css-media-queries');
 const map = require('gulp-sourcemaps');
 const bs = require('browser-sync');
 
@@ -17,6 +18,7 @@ module.exports = function style() {
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}).on('error', sass.logError))
+		.pipe(groupMedia())
 		.pipe(prefixer({
 			overrideBrowserslist: ['last 8 versions'],
 			browsers: [
