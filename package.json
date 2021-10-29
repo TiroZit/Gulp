@@ -29,7 +29,6 @@
     "gulp-plumber": "^1.2.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.1.0",
-    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-sass-bulk-importer": "^3.0.1",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-svg-css-pseudo": "^1.0.4",
