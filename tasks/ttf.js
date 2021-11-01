@@ -4,7 +4,6 @@ const {
 } = require('gulp');
 const changed = require('gulp-changed');
 const ttf2woff2 = require('gulp-ttftowoff2');
-const ttf2woff = require('gulp-ttf2woff');
 
 module.exports = function ttf(done) {
   return src('src/fonts/**/*.ttf')
