@@ -1,0 +1,24 @@
+extends components/_head
+include components/_sprite
+block vars
+	- var lang = ''
+	- var type = ''
+	- var title = ''
+	- var description = ''
+	- var siteName = ''
+	- var keywords = ''
+	- var url = ''
+	- var imageLogo = ''
+	- var typeImage = 'image/webp'
+	- var widthImage = '400'
+	- var heightImage = '300'
+	- var favicon = 'img/favicons/favicon.webp'
+	- var font = 'fonts/.woff2'
+	- var light = ''
+	- var dark = ''
+block content
+	._wrapper
+		include components/_header
+		main.main
+		include components/_footer
+	include components/_scripts

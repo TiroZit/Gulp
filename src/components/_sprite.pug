@@ -1,0 +1,9 @@
+mixin svg(name, width, height, fill, stroke)
+  svg(class=name, style=`width: ${width}px; height: ${height}px; fill: ${fill}; stroke: ${stroke};`) 
+    use(xlink:href=`img/sprite.svg#${name}`)
+//- +svg('logo', '53', '48', 'currentColor')
+mixin picture(path, name, type, alt)
+  picture
+    each val in type
+      source(srcset=path + "/" + name + "." + val type="image/" + val)
+    img(src=path + "/" + name + ".jpg" alt=alt)
