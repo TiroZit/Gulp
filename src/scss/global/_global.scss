@@ -1,46 +1,14 @@
-.flex {
-   display: flex;
-   align-items: flex-start;
-   justify-content: flex-start;
-}
+:root{
 
-.--just-space {
-   justify-content: space-between;
 }
-
-.--just-center {
-   justify-content: center;
-}
-
-.--just-end {
-   justify-content: flex-end;
-}
-
-.--align-str {
-   align-items: stretch;
-}
-
-.--align-center {
-   align-items: center;
-}
-
-.--align-end {
-   align-items: flex-end;
-}
-
-.--dir-col {
-   flex-direction: column;
-}
-
 html,
 body {
    //color: $colorBlack;
-   font-family: "OpenSans" sans-serif;
+   font-family: "", sans-serif;
    //font-size: $f14;
    font-weight: 400;
 }
 a {
-   color: inherit;
    transition: all 0.3s ease 0s;
 }
 ._wrapper {

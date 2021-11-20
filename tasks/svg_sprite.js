@@ -8,14 +8,16 @@ const sprite = require('gulp-svg-sprite');
 module.exports = function svg_sprite() {
 	return src('src/svg/**/*.svg')
 		.pipe(svgmin({
-			plugins: [{
-					removeComments: true
-				},
-				{
-					removeEmptyContainers: true
-				}
-			]
-		}))
+			multipass: true,
+      full: true,
+      plugins: [
+        'removeDoctype',
+        'removeComments',
+        'sortAttrs',
+        'removeUselessStrokeAndFill',
+        'removeAttrs',
+      ],
+    }))
 		.pipe(sprite({
 			mode: {
 				stack: {

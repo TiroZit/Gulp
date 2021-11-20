@@ -6,11 +6,9 @@
   padding: 0;
   border: 0;
 }
-:focus,
 :active{
    outline: none;
 }
-a:focus,
 a:active{
    outline: none;
 }
@@ -29,12 +27,15 @@ body{
    font-size: 14px;
 }
 button{
+   font-family: inherit;
    cursor: pointer;
    color: inherit;
 }
 a,
 a:visited,
 a:hover{
+   color: inherit;
+   cursor: pointer;
    text-decoration: none;
 }
 ul,
