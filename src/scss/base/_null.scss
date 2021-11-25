@@ -1,10 +1,10 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   border: 0;
 }
 :active{
    outline: none;
@@ -54,6 +54,9 @@ h6{
 img {
    max-width: 100%;
    display: block;
+}
+img:not([src]):not([srcset]) {
+   visibility: hidden;
 }
 input,
 textarea{

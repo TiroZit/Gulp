@@ -7,7 +7,7 @@ const {
 module.exports = function watching() {
   watch('src/**/*.pug', parallel('html'));
   watch('src/**/*.php', parallel('php'));
-  watch('src/**/*.scss', parallel('style'));
+  watch('src/**/*.+(scss|sass)', parallel('style'));
   watch('src/**/*.js', parallel('dev_js'));
   watch('src/**/*.json', parallel('html'));
   watch('src/img/**/*.+(svg|ico)', parallel('rastr'));
