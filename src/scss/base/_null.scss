@@ -22,9 +22,6 @@ html,
 body{
    height: 100%;
    width: 100%;
-   font-size: 100%;
-   line-height: 1;
-   font-size: 14px;
 }
 button{
    font-family: inherit;
@@ -49,7 +46,7 @@ h4,
 h5,
 h6{
    font-family: inherit;
-   font-weight: 400;
+   font-weight: inherit;
 }
 img {
    max-width: 100%;
@@ -60,6 +57,7 @@ img:not([src]):not([srcset]) {
 }
 input,
 textarea{
+   font-family: inherit;
    padding: 10px;
 }
 address{

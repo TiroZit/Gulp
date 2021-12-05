@@ -1,19 +1,25 @@
 ::root
-body 
-	//color: var() 
-	font-family: "", sans-serif 
-	font-weight: 400 
-  line-height: 1.42;
-a 
-	transition: all 0.3s ease 0s 
-._wrapper 
-  display: flex 
-  flex-direction: column 
-  overflow: hidden 
-  min-height: 100% 
-.main 
-  flex: 1 1 auto 
-.container 
+  --white: #fff
+  --black: #000
+body
+  font-family: "", sans-serif
+  font-size: rem()
+  font-weight: 600
+  line-height: 1.42
+  color: var(--white)
+  background: var(--black)
+  &.lock
+    overflow: hidden
+a
+  transition: all .3s
+._wrapper
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  min-height: 100%
+.main
+  flex: 1 1 auto
+[class*=__container]
   position: relative
-  @include container("", "10px");
-
+  @include container("", "10px")
+  box-sizing: content-box
